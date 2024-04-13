@@ -1,19 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+  <head>
+    <!-- Meta tags for character set and responsive behavior -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>My Professional Webpage</title>
+
+    <!-- Main stylesheet link -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google Fonts preconnect for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts for 'Space Grotesk' and 'DM Sans' -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Script for main functionality, loaded after HTML is parsed -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header section with navigation and logo -->
     <header class="header">
-        <div class="container">
-            <div class="header_inner"></div>
+      <div class="header__nav">
+        <div class="header__logo">
+          <img src="images/header/logo_img.png" alt="Company Logo" />
         </div>
+        <div class="header__menu">
+          <a href="#">Let's work !</a>
+        </div>
+      </div>
     </header>
 
-    <script src="js/main.js"></script>
-</body>
+    <!-- Main company info section -->
+    <section class="section section--company-info">
+      <div class="section__container">
+        <div class="section__company-info">
+          <div class="company-info__slogan">
+            <h1>Digital product design on demand</h1>
+          </div>
+          <div class="company-info__text">
+            <p>
+              We specialize in providing consultancy services for startups and
+              small businesses, focusing on user research and interface design
+              to create intuitive and user-friendly products.
+            </p>
+          </div>
+          <div class="company-info__button">
+            <button class="button button--get-in-touch">Get in touch</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services offered by the company -->
+    <section class="section section--services-info">
+      <div class="section__container">
+        <div class="services-info__content">
+          <div class="services-info__header">
+            <h2>Services</h2>
+          </div>
+          <div class="services-info__cards">
+            <div class="services-info__card">
+              <div class="services-info__card-icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </div>
+              <div class="services-info__card-title">Research</div>
+              <div class="services-info__card-options">
+                <ul>
+                  <li>Competitors analysis</li>
+                  <li>User Research</li>
+                  <li>UX Audit</li>
+                  <li>Usability Testing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services-info__card">
+              <div class="services-info__card-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <div class="services-info__card-title">Design</div>
+              <div class="services-info__card-options">
+                <ul>
+                  <li>IA Design</li>
+                  <li>MVP Product Design</li>
+                  <li>UX Design</li>
+                  <li>UI Design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services-info__card">
+              <div class="services-info__card-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="services-info__card-title">Consulting</div>
+              <div class="services-info__card-options">
+                <ul>
+                  <li>Invite us to join your team as:</li>
+                  <li>Researcher</li>
+                  <li>Designer</li>
+                  <li>Product Owner</li>
+                  <li>Project Manager</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services-info__card">
+              <div class="services-info__card-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="services-info__card-title">Mentoring</div>
+              <div class="services-info__card-options">
+                <ul>
+                  <li>IA Design</li>
+                  <li>MVP Product Design</li>
+                  <li>UX Design</li>
+                  <li>UI Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section dedicated to digital tools in healthcare -->
+    <section class="section section--digital-tools-info">
+      <div class="section__container">
+        <div class="digital-tools-info-content">
+          <div class="digital-tools-info-text">
+            <div class="digital-tools-info_header">
+              <h4>Research</h4>
+              <h2>Healthcare digital tools</h2>
+            </div>
+            <div class="digital-tools-info_options">
+              <div class="digital-tools-info_option_one">
+                <p>
+                  Our team conducted user research and designed two digital
+                  tools to help clinical researchers and clinicians diagnose
+                  dementia at an early stage.
+                </p>
+              </div>
+              <div class="digital-tools-info_option_two">
+                <ul>
+                  <li>Desktop research</li>
+                  <li>Qualitative user research</li>
+                  <li>User flow</li>
+                  <li>Usability testing</li>
+                </ul>
+              </div>
+              <div class="digital-tools-info_option_three">
+                <p>The project is under development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="digital-tools-info-image">
+            <img
+              id="section3_img"
+              src="images/section_3/section3_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-commerce section example -->
+    <section class="section section--commerce-info">
+      <div class="section__container">
+        <div class="commerce-info-content">
+          <div class="commerce-info-images">
+            <div class="commerce-info-image-items">
+              <img
+                id="section4_1img"
+                src="images/section_4/section4.2_img.png"
+                alt=""
+              />
+            </div>
+            <div class="commerce-info-image-odered">
+              <img
+                id="section4_2img"
+                src="images/section_4/section4.1_img.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="commerce-info-text">
+            <div class="commerce-info-header">
+              <h4>Full stack project</h4>
+              <h2>E-commerce</h2>
+            </div>
+            <div class="commerce-info-options">
+              <p>
+                We created a wholesale e-commerce website from scratch and
+                developed it using OpenCart CMS.
+              </p>
+              <a href="#">optoptom.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects showcase section -->
+    <section class="section section--projects-info">
+      <div class="section__container">
+        <div class="projects-info-content">
+          <div class="projects-info-image">
+            <img
+              src="./images/section_5/section5_img.jpeg"
+              alt=""
+              id="parallaxImage"
+            />
+          </div>
+          <div class="projects-info-text">
+            <div class="projects-info-composition">
+              <div class="projects-info-header">
+                <h4>Mvp product design</h4>
+                <h2>TrustedUX</h2>
+              </div>
+              <div class="commerce-info-options">
+                <p>
+                  In 3 months, we designed and launched the MVP of a Digital
+                  tool to assess user perception of trust in technology.
+                </p>
+                <a href="#">trustedux.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-info-button">
+            <button class="button button--project-info">
+              Ask for more projects
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company values and principles section -->
+    <section class="section section--our-values-info">
+      <div class="section__container">
+        <div class="our-values-info-content">
+          <div class="our-values-info-header">
+            <h4>About us</h4>
+            <h2>Our Values</h2>
+          </div>
+          <div class="our-values-info-options">
+            <div class="our-values-info__option--first">
+              <p>Best service according to your goals and budget</p>
+            </div>
+            <div class="our-values-info__option--second">
+              <p>Best practices in design and research</p>
+            </div>
+            <div class="our-values-info__option--third">
+              <p>Users are happy you are wealthy</p>
+            </div>
+            <div class="our-values-info__option--fourth">
+              <p>Open communication and collaboration. We are Agile.</p>
+            </div>
+            <div class="our-values-info__option--fifth">
+              <p>Following deadlines and being rational about delays</p>
+            </div>
+            <div class="our-values-info__option--sixth">
+              <p>Transparent in cost calculation and payment policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder info section -->
+    <section class="section section--founder-info">
+      <div class="section__container">
+        <div class="founder-info-content">
+          <div class="founder-info-header">
+            <div class="founder-info-header-text">
+              <h2>Who are we?</h2>
+            </div>
+          </div>
+          <div class="founder-info-data">
+            <div class="founder-info-photo">
+              <img
+                id="section7img"
+                src="images/section_7/section7_img.png"
+                alt=""
+              />
+            </div>
+            <div class="founder-info-bio">
+              <h4>Julia Paramonova</h4>
+              <p>Founder Produit Pionnier OÜ</p>
+              <a href="">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="section section--testimonials-info">
+      <div class="section__container">
+        <div class="testimonials-info-content">
+          <div class="testimonials-info-header">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="testimonials-info-content-options">
+            <div class="testimonials-info-text-first">
+              <h5>
+                We collaborated with Julia on multiple projects. Julia is a
+                person I could always count on to deliver systematic and
+                high-quality work on time. For anyone looking for a well-rounded
+                UX/UI designer, she has both the training and professional
+                experience to go from user research, to high-fidelity design, to
+                user testing. Julia is an asset for any team looking for a UX/UI
+                or a product designer, who can take responsibility and tackle
+                sophisticated design problems.
+              </h5>
+              <p>
+                Ilja Šmorgun, Senior Product Designer Katana Cloud Manufacturing
+              </p>
+            </div>
+            <div class="testimonials-info-text-second">
+              <h5>
+                I definitely recommend Julia for her innovative designs and
+                strict adherence to best practices in UX. Her creativity and
+                commitment to industry standards consistently deliver
+                outstanding user experiences for our clients. Julia is great to
+                work with and is absolutely the best at offering solutions.
+              </h5>
+              <p>Tatiana Pylkina, Head of Product Sogo Service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="section section--faq-info">
+      <div class="section__container">
+        <div class="faq-info-content">
+          <div class="faq-info-header">
+            <div class="faq-info-header-option-one">
+              <h2>Have a Question?</h2>
+            </div>
+            <div class="faq-info-header-option-two">
+              <h2>Send Us a Message</h2>
+            </div>
+          </div>
+          <div class="feedback-form">
+            <form action="#" method="post">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="feedback"
+                id="feedback"
+                cols="30"
+                rows="8"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="button-submit">
+                <span class="button-text">Submit</span>
+                <span class="submit-symbol">></span>
+                <!-- Directly place '>' symbol here -->
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <section class="footer__section">
+          <h2 class="footer__title">Produit Pionnier OÜ</h2>
+          <ul class="footer__list">
+            <li>Registry code: 16674930</li>
+            <li>Tallinn, Estonia</li>
+          </ul>
+        </section>
+        <section class="footer__section">
+          <h2 class="footer__title">Contacts</h2>
+          <ul class="footer__list">
+            <li>Phone: +372 5848 1281</li>
+            <li><span class="footer__email">propionnier@gmail.com</span></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>

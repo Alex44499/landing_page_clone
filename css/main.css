@@ -1,0 +1,937 @@
+/* Import external stylesheets and fonts */
+@import "./reset.css";
+
+/* Base Styles */
+/* Sets the default font for the body to ensure consistency across the application. */
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+html {
+  /* Apply scroll snapping to the body or the main container */
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+}
+.section {
+  /* Each section must have this to snap properly */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh; 
+}
+
+
+
+
+
+/* Header styles within the digital tools section, designed for impact and hierarchy. */
+/* .digital-tools-info_header */
+
+h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+/* Sub-header styles within the digital tools section, providing additional context or categorization. */
+/* .digital-tools-info_header  */
+h4 {
+  font-size: 14px;
+  /* Smaller font size for sub-headers or descriptive text */
+  font-style: normal;
+  /* Ensures the font style is standard, overriding any inherited styles */
+  text-transform: uppercase;
+  /* Uppercase for stylistic emphasis or section categorization */
+  font-family: "DM Sans", sans-serif;
+  /* Specific font family for design consistency */
+  letter-spacing: 10px;
+  /* Letter spacing to increase readability and aesthetic spacing */
+  padding-bottom: 10px;
+  /* Bottom padding to separate header from subsequent content */
+  font-weight: 700;
+}
+
+/* Main container for commerce info content with consistent top padding and defined width and height */
+.commerce-info-content,
+.our-values-info-content,
+.testimonials-info-content,
+.founder-info-content,
+.faq-info-content,
+.projects-info-text {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  /* Establishes a flex context for direct children */
+  padding-top: 30px;
+  /* Top padding for spacing from content above */
+  width: inherit;
+  /* Inherits the width from its parent, typically to fill the width of the parent container */
+  height: 660px;
+  /* Fixed height for the container */
+
+  padding-left: 110px;
+  /* Left padding to maintain consistent spacing from the content edge */
+  padding-right: 110px;
+  /* Right padding to maintain consistent spacing from the content edge */
+}
+
+/* Styling for section headers, making them prominently visible */
+.services-info__header,
+.digital-tools-info_header,
+.commerce-info-header,
+.projects-info-header,
+.our-values-info-header,
+.testimonials-info-header {
+  margin: 20px;
+}
+
+/* Header */
+/* Utilizes sticky positioning to keep the header at the top of the viewport during scrolling. */
+header {
+  position: sticky;
+  top: 0;
+  /* Anchor to the top of the viewport */
+  width: 100%;
+  /* Fixed width, consider using media queries for responsiveness */
+  z-index: 1000;
+  /* Ensures the header overlays other content */
+}
+
+/* Navigation Bar */
+/* Styles for the main navigation bar, including layout and background. */
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  /* Aligns nav items on opposite ends */
+  align-items: center;
+  /* Centers items vertically */
+  background-color: white;
+  /* Explicit background color for clarity */
+  height: 62px;
+  /* Fixed height for uniform appearance */
+  padding: 30px;
+  /* Uniform padding around the nav items */
+}
+
+/* Logo */
+/* Ensures the logo image within the header has a consistent size. */
+.header__logo img {
+  width: 100px;
+  /* Fixed width for the logo */
+}
+
+/* Navigation Links */
+/* Defines the default styles for links within the navigation bar. */
+.header_nav  a {
+  color: black;
+  /* High-contrast color for readability */
+  font-size: 14px;
+  /* Legible font size for navigation links */
+  font-weight: 500;
+  /* Medium font weight for a balanced emphasis */
+}
+
+/* Menu Links */
+/* Ensures consistent styling for links within the menu section of the header. */
+.header__menu a {
+  display: flex;
+  /* Aligns menu items in a row */
+  color: #000000;
+  /* Ensures text color consistency with other nav links */
+  font-weight: 700;
+}
+
+
+
+
+
+/* Section 1: General Layout and Styling */
+/* Flexbox layout centers content both vertically and horizontally, with custom margins for spacing. */
+.section {
+  display: flex;
+  align-items: center;
+  /* Vertically centers content */
+  justify-content: center;
+  /* Horizontally centers content */
+  margin-top: 14px;
+  /* Top margin for spacing from previous content */
+  margin-bottom: 10px;
+  /* Bottom margin for spacing to next content */
+}
+
+/* Container within each section to control dimensions and layout of contained elements. */
+.section__container {
+  display: flex;
+  flex-direction: column;
+  /* Stacks child elements vertically */
+  align-items: center;
+  /* Centers children horizontally in the container */
+  justify-content: center;
+  /* Centers children vertically in the container */
+  width: 1380px;
+  /* Fixed width; consider responsiveness */
+  height: 780px;
+  /* Fixed height; consider content scalability */
+  overflow: hidden;
+  /* Hides any overflow content, ensuring clean edges */
+}
+
+
+/* Section Background Styling */
+/* Applies a background image with specific styling for a company's section. */
+.section--company-info {
+  background-image: url("../images/header/header_img.png");
+  /* Path to the background image */
+  background-size: cover;
+  /* Ensures the background covers the entire section */
+  background-repeat: no-repeat;
+  /* Prevents the background image from repeating */
+  background-color: #1c1b2d;
+  /* Fallback color if the image fails to load */
+  background-position: 50%;
+  /* Centers the background image */
+}
+
+/* Company Info Text Styling */
+/* Shared styles for text elements within the company info section to maintain visual consistency. */
+.company-info__slogan,
+.company-info__text,
+.company-info__button {
+  color: white;
+  /* Sets text color for high contrast against dark background */
+  width: 864px;
+  /* Fixed width for text blocks */
+  text-align: left;
+  /* Aligns text to the left for standard reading flow */
+}
+
+
+
+
+
+/* Specific styling for the company slogan to emphasize its importance. */
+.company-info__slogan {
+  font-size: 80px;
+  /* Large font size for impact */
+  font-weight: 700;
+  /* Bold font weight for emphasis */
+  line-height: 1.2em;
+  /* Controls line spacing for readability */
+  padding-bottom: 10px;
+  /* Adds spacing below the slogan for separation */
+}
+
+
+
+
+/* Styling for additional descriptive text within the company info section. */
+.company-info__text {
+  font-size: 24px;
+  /* Legible font size for descriptive text */
+  line-height: 43px;
+  /* Increased line spacing for enhanced readability */
+  font-weight: 300;
+  /* Lighter font weight for body text */
+}
+
+/* Button Styling within Company Info */
+/* Styles for call-to-action buttons, designed to stand out and invite interaction. */
+.company-info__button .button, 
+ button {
+  background-color: black;
+  /* Button background color for contrast */
+  color: rgb(250, 250, 250);
+  /* Button text color for readability */
+  text-transform: uppercase;
+  /* Uppercase text for stylistic emphasis */
+  border-radius: 100px;
+  /* Rounded corners for a modern, friendly appearance */
+  font-size: 14px;
+  /* Standard font size for button text */
+  font-weight: 700;
+  /* Bold font weight for text prominence */
+  letter-spacing: 2.2px;
+  /* Spacing between letters for aesthetic enhancement */
+  cursor: pointer;
+  /* Changes cursor to indicate button functionality */
+  padding: 18px 36px;
+  /* Top and bottom padding paired with left and right for balanced spacing */
+  margin-top: 36px;
+  /* Margin above the button for spacing from preceding elements */
+  border: solid 2px white;
+  /* White border to complement the button's styling */
+  width: 200px;
+}
+
+.company-info__button .button:hover {
+  color: black;
+  border-color: black;
+  background-color: rgb(245, 245, 245); /* Darker green on hover */
+}
+
+/* Section 2: Services Information */
+
+/* Main container for service info, uses column layout for vertical alignment of child elements. */
+.services-info__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centers children horizontally */
+  /* Background color is commented out; used for debugging or visual layout testing */
+}
+
+/* Container for individual service cards, arranged horizontally. */
+.services-info__cards {
+  display: flex;
+
+  /* Aligns service cards in a row */
+}
+
+/* Styling for individual service cards */
+.services-info__card {
+  display: flex;
+  flex-direction: column;
+  /* Stacks card content vertically */
+  align-items: center;
+  /* Centers content horizontally within the card */
+  width: 260px;
+  /* Fixed width for consistency */
+  height: 420px;
+  /* Fixed height for consistency */
+  background-color: #1c1b2d;
+  /* Dark theme background for the card */
+  color: white;
+  /* Text color for contrast against dark background */
+  border: solid 2px whitesmoke;
+  /* Subtle border color for soft contrast */
+  border-radius: 20px;
+  /* Rounded corners for modern card appearance */
+  margin: 15px;
+  /* Margin around cards for spacing */
+  line-height: 40px;
+  /* Line height for text within the card */
+  box-shadow: 10px 10px 0px #000000;
+  /* Adds depth with a shadow */
+  transition: all 0.2s;
+  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for service cards to provide interactive feedback */
+.services-info__cards .services-info__card:hover {
+  transform: scale(1.05);
+  /* Slightly enlarges the card */
+  background-color: gainsboro;
+  /* Light background color on hover for distinction */
+  color: black;
+  /* Text color change for readability on light background */
+}
+
+/* Icon styling within service cards for visual appeal */
+.services-info__card-icon {
+  font-size: 30px;
+  /* Larger font size for icon emphasis */
+  padding: 10px;
+  /* Padding around icon for spacing */
+}
+
+/* Title styling within service cards for emphasis */
+.services-info__card-title {
+  font-size: 32px;
+  /* Noticeably large font size for titles */
+  font-weight: 700;
+  /* Bold font weight for title emphasis */
+  padding-bottom: 10px;
+  /* Padding below the title for spacing */
+}
+
+/* Styling for descriptive options within service cards */
+.services-info__card-options {
+  width: 250px;
+  /* Fixed width for consistency */
+  font-size: 22px;
+  /* Font size that balances readability with information density */
+  font-weight: 300;
+  /* Lighter font weight for less emphasis compared to titles */
+  padding: 30px;
+  /* Generous padding for clear separation of text from card edges */
+}
+
+/* Section 3: Digital Tools Information Styling */
+
+/* Flex container for digital tools content, ensures direct children are laid out as flex items. */
+.digital-tools-info-content {
+  display: flex;
+  height: 660px;
+  /* background-color: rebeccapurple; */
+}
+
+/* Styles for the textual content within the digital tools section, organized in a column. */
+.digital-tools-info-text {
+  display: flex;
+  flex-direction: column;
+  /* Aligns child elements in a vertical stack */
+  margin-left: 110px;
+  /* Left margin for offsetting text from the content's edge */
+}
+
+/* Defines the style for the options list within the digital tools section, emphasizing readability. */
+.digital-tools-info_options {
+  font-size: 24px;
+  /* Legible font size for options text */
+  font-weight: 110;
+  /* Light font weight for a more refined typography */
+  line-height: 48px;
+  /* Line height adjusted for readability and aesthetic spacing between lines */
+}
+
+/* Additional styling for a specific option to distinguish it or add emphasis. */
+.digital-tools-info_option_two {
+  padding: 24px 20px;
+  /* Padding for internal spacing, top/bottom and left */
+  line-height: 43px;
+  /* Increased line height for enhanced readability */
+}
+
+/* Header and options share common margin and width settings for consistent alignment. */
+.digital-tools-info_header,
+.digital-tools-info_options {
+  margin-left: 17px;
+  /* Left margin aligns text within the section */
+}
+
+/* Container for images within the digital tools section, positioning relative to normal flow. */
+.digital-tools-info-image {
+  position: relative;
+  left: 50px;
+  /* Offset to the right for visual interest or alignment purposes */
+  transition: transform 2s ease;
+  /* Smooth transition for any transform changes, enhancing interactivity */
+}
+
+/* Styles for images within the digital tools info section, with emphasis on positioning and transitions. */
+.digital-tools-info-image > img {
+  margin-top: 70px;
+  /* Top margin to distance the image from elements above */
+  transform: translateX(10px);
+  /* Slight horizontal translation for dynamic positioning */
+  transition: transform 2s ease;
+  /* Ensures smooth transition for the transform effect */
+  height: auto;
+  /* Maintains aspect ratio of the image by setting height to auto */
+}
+
+/* Section 4: Commerce Information Styling */
+
+/* Container for images within the commerce info section, flex value allows it to grow twice as much as the text */
+.commerce-info-images {
+  display: flex;
+  /* Enables a flex context for image items */
+  gap: 150px;
+  /* Space between image items */
+  align-items: flex-end;
+  /* Aligns items to the end of the cross-axis */
+  flex: 2;
+  /* Takes up twice the space compared to its sibling flex item */
+}
+
+/* Individual image item styling, allows it to align independently at the start of the cross-axis */
+.commerce-info-image-items {
+  align-self: flex-start;
+  /* Aligns this particular item to the start */
+}
+
+/* Text content styling within the commerce info section, arranged in a column */
+.commerce-info-text {
+  display: flex;
+  /* Enables a flex context */
+  flex-direction: column;
+  /* Stacks child elements vertically */
+  padding-top: 60px;
+  /* Top padding for spacing from content above */
+  flex: 1;
+  /* Takes up space according to its content, in proportion to flex siblings */
+}
+
+/* Styling for the descriptive options text, emphasizing readability and spacing */
+.commerce-info-options,
+.commerce-info-options>a,
+.projects-info-options,
+.our-values-info-options
+{
+  font-size: 24px;
+  /* Sets a legible font size for readability */
+  font-weight: 110;
+  /* Lighter font weight for a refined look */
+  line-height: 38px;
+  /* Adjusts line height for readability and aesthetic */
+  padding-left: 20px;
+  /* Left padding for spacing from content edge */
+}
+
+.commerce-info-options>a{
+  padding-left: 0;
+}
+
+/* Additional bottom padding for paragraphs within the options, for better separation */
+.commerce-info-options p {
+  padding-bottom: 24px;
+  /* Bottom padding to separate paragraphs */
+}
+
+/* Styles for images to maintain aspect ratio, add border-radius for aesthetics, and define border styling */
+.commerce-info-content img {
+  height: 550px;
+  /* Fixed height for images */
+  width: auto;
+  /* Width adjusts automatically to maintain the aspect ratio */
+  border-radius: 50px;
+  /* Rounded corners for a modern, app-like look */
+  color: rgb(51, 51, 51);
+  /* Color applied to potential SVG images or borders */
+  border: 10px solid black;
+  /* Solid black border with defined thickness */
+}
+
+/*Section 5*/
+
+.section__container {
+  /* background-color: aqua; */
+}
+
+.projects-info-text {
+  color: aliceblue;
+  background-color: #1c1b2d;
+  border-radius: 50px;
+  width: 1160px;
+  flex-direction: column;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.projects-info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-info-text {
+  display: flex;
+  justify-content: right;
+}
+
+.commerce-info-options a {
+  color: #cbff00;
+}
+
+.projects-info-composition {
+  width: 500px;
+}
+
+.button--project-info {
+  background-color: #cbff00;
+  color: #1c1b2d;
+  /* Button text color for readability */
+  text-transform: uppercase;
+  /* Uppercase text for stylistic emphasis */
+  border-radius: 100px;
+  /* Rounded corners for a modern, friendly appearance */
+  font-size: 14px;
+  /* Standard font size for button text */
+  font-weight: 700;
+  /* Bold font weight for text prominence */
+  letter-spacing: 2.2px;
+  /* Spacing between letters for aesthetic enhancement */
+  cursor: pointer;
+  /* Changes cursor to indicate button functionality */
+  padding: 18px 36px;
+  /* Top and bottom padding paired with left and right for balanced spacing */
+  margin-top: 10px;
+  margin-left: 50px;
+  /* White border to complement the button's styling */
+  width: 300px;
+}
+
+.projects-info-image img {
+  transform: perspective(1000px) rotateX(50deg) rotateY(2deg) rotateZ(40deg);
+  transform-origin: center bottom;
+  transition: transform 0.3s ease-in-out;
+  border-right: solid rgb(102, 102, 102) 5px;
+  border-bottom: solid rgb(102, 102, 102) 5px;
+  border-radius: 20px;
+
+  /* transform: translate(-50%, -50%); */
+  z-index: 1;
+  width: 800px;
+  bottom: 35%;
+  right: 50%;
+  position: absolute;
+  transform: translateZ(110deg);
+}
+
+.projects-info-image {
+  z-index: 1;
+  /* Ensures the image stays behind the text */
+}
+
+.projects-info-composition {
+  position: relative;
+  /* Establish relative positioning */
+  z-index: 2;
+  /* Ensures the text stays on top of the image */
+}
+
+/* This ensures that the absolute positioning of the child is relative to this container */
+.projects-info-content {
+  position: relative;
+}
+
+/* Section 6 */
+
+.our-values-info-content {
+  flex-direction: column;
+}
+
+.our-values-info-header {
+  margin: 20px 0 20px 0;
+}
+
+.our-values-info-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Defines a 3-column layout */
+  gap: 50px;
+  /* Space between grid items */
+  height: inherit;
+  padding: 0;
+}
+
+.our-values-info-options > div {
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+
+  border-radius: 30px;
+}
+
+.our-values-info-options > div > p {
+  max-width: 69%;
+}
+
+.our-values-info__option--first {
+  min-height: calc(100% + 20px);
+  /* Increase the minimum height */
+}
+
+/* Select and style the first column items */
+.our-values-info-options > div:nth-child(3n + 1) {
+  background-color: white;
+  /* Replace with your desired color */
+  border: 1px solid black;
+}
+
+/* Select and style the second column items */
+.our-values-info-options > div:nth-child(3n + 2) {
+  background-color: rgb(243, 243, 243);
+  /* Replace with your desired color */
+}
+
+/* Select and style the third column items */
+.our-values-info-options > div:nth-child(3n + 3) {
+  background-color: #cbff00;
+  /* Replace with your desired color */
+}
+
+/* Section 7 */
+
+.founder-info-content {
+  color: aliceblue;
+  background-color: #1c1b2d;
+  border-radius: 50px;
+  width: 1160px;
+  flex-direction: row;
+  margin: 40px;
+  align-items: center;
+  /* height: 100%; */
+  gap: 5%;
+}
+
+.founder-info-content > div {
+  flex: 1;
+}
+
+.founder-info-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: inherit; */
+  background-image: url("../images/header/header_img.png");
+  /* Path to the background image */
+  background-size: contain;
+  /* Ensures the background covers the entire section */
+  background-repeat: no-repeat;
+  /* Prevents the background image from repeating */
+  background-color: #1c1b2d;
+  background-position: center center;
+}
+
+.founder-info-header-text {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+}
+
+.founder-info-data {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  align-items: start;
+  justify-content: center;
+}
+.founder-info-photo > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.founder-info-bio > h4 {
+  font-size: 24px;
+  /* Smaller font size for sub-headers or descriptive text */
+  font-style: normal;
+  /* Ensures the font style is standard, overriding any inherited styles */
+  text-transform: none;
+  /* Uppercase for stylistic emphasis or section categorization */
+  letter-spacing: 0;
+  /* Letter spacing to increase readability and aesthetic spacing */
+  padding-bottom: 10px;
+  /* Bottom padding to separate header from subsequent content */
+  font-weight: 500;
+}
+
+.founder-info-bio > p,
+a {
+  font-size: 18px;
+  /* Smaller font size for sub-headers or descriptive text */
+  padding-bottom: 10px;
+  /* Bottom padding to separate header from subsequent content */
+  font-weight: 300;
+  color: rgb(170, 170, 170);
+}
+
+.founder-info-bio > a {
+  color: #cbff00;
+}
+
+
+
+/* Section 8 - Testimonials CSS Styles
+   This section styles the testimonials area of the webpage. */
+
+/* Container for testimonials, centered with a column layout */
+.testimonials-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+/* Flex container for individual testimonials, spaced with a gap */
+.testimonials-info-content-options {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+/* Flex item configuration to ensure equal width and spacing */
+.testimonials-info-content-options > div {
+  flex: 1;
+}
+
+/* Styling for the testimonials section header */
+.testimonials-info-header > h2 {
+  font-size: 64px;      /* Large font size for emphasis */
+  margin-bottom: 40px;  /* Spacing below the header */
+  font-weight: 700;     /* Bold font weight for visibility */
+}
+
+/* Base styles for testimonial texts with padding and rounded borders for aesthetic appeal */
+.testimonials-info-text-first,
+.testimonials-info-text-second {
+  border-radius: 30px;
+  padding: 30px;
+  font-size: 23px;          /* Sufficiently large font size for readability */
+  font-weight: 300;         /* Lighter font weight for a modern look */
+  text-align: left;
+  color: rgb(102, 102, 102);/* Gray color for text to reduce contrast */
+  background-color: rgb(243, 243, 243); /* Light gray background to highlight text area */
+}
+
+/* Specific height adjustment for the second testimonial block */
+.testimonials-info-text-second {
+  height: 80%;
+}
+
+/* Header style within the first testimonial block */
+.testimonials-info-text-first h5,
+.testimonials-info-text-second > h5 {
+  margin-bottom: 50px; /* Space below the header for separation */
+  line-height: 1.5;    /* Line height for better readability */
+}
+
+/* Paragraph styles within testimonial texts */
+.testimonials-info-text-first > p,
+.testimonials-info-text-second > p {
+  font-size: 15px;  /* Smaller font size for paragraph text */
+}
+
+/* Section 9 - FAQ and Feedback Form CSS Styles */
+
+/* Container styling for sections, commented out background for debugging */
+
+/* FAQ section content styling, centered with column layout */
+.faq-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Full-width styling for feedback form and its elements */
+.feedback-form, .feedback-form > form {
+  width: 100%;  /* Ensures each element takes the full available width */
+}
+
+.feedback-form > form > input, .feedback-form > form > textarea{
+  width: 70%;
+}
+/* Styling for form elements within feedback form */
+.feedback-form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+/* Background and padding for input fields and textarea */
+.feedback-form > form > input, .feedback-form > form > textarea {
+  background-color: #EEEEEE;
+  padding: 16px;
+}
+/* Button styling in the feedback form */
+.feedback-form > form > button {
+  margin: 0; /* Removes margin for button alignment */
+}
+
+/* General and hover states for submit button */
+.button-submit {
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+/* Default hidden state for '>' symbol in the submit button */
+.submit-symbol {
+  display: none; /* Hide the symbol by default */
+  
+}
+
+/* Hover effects for submit button */
+.button-submit:hover {
+  color: black;
+  border-color: black;
+  background-color: rgb(245, 245, 245); /* Subtle color change on hover */
+}
+
+
+/* Show '>' symbol on hover and change its color */
+.button-submit:hover .submit-symbol {
+  display: inline;
+  color: black;
+  
+}
+
+/* Footer styling, setting height, width, and background color */
+
+
+
+/* Footer styling */
+footer {
+  background-image: url("../images/header/header_img.png");
+  background-size: cover;
+  /* Ensures the background covers the entire section */
+  background-repeat: no-repeat;
+  /* Prevents the background image from repeating */
+  background-color: #111111;
+  scroll-snap-align: end;
+  width: inherit;
+  /* background: #1c1b2d; */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  height: 300px;
+}
+
+.footer__container{
+  display: flex;
+  justify-self: center;
+  gap: 150px;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-size: 20px;
+}
+
+.footer__list {
+  list-style: none;
+  font-size: 16px;
+  font-weight:lighter;
+}
+
+.footer__email {
+  color: #cbff00; /* Example color, change it to what you need */
+}
+
+
+
+
+
+
+
+
+
+
+/* Add media queries and other styles as needed */
+
+/* Global Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Existing CSS styles for elements, layouts, typography, etc. */
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* other styling */
+}
+/* More existing styles... */
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1100px) 
+{
+.services-info__cards {
+  
+  }
+
+}
